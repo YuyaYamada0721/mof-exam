@@ -2,31 +2,31 @@
 
 <h1>物件一覧</h1>
 
-<table>
+<table width="100%">
   <thead>
     <tr>
-      <th>物件名</th>
-      <th>賃料</th>
-      <th>住所</th>
-      <th>築年数</th>
-      <th>備考</th>
+      <th width="5%">物件名</th>
+      <th width="5%">賃料</th>
+      <th width="10%">住所</th>
+      <th width="5%">築年数</th>
+      <th width="70%">備考</th>
     </tr>
   </thead>
 
-  <table>
+  <tbody>
     <% @properties.each do |property| %>
       <tr>
         <td><%= property.name %></td>
-        <td><%= property.rent %></td>
+        <td><%= converting_to_jpy(property.rent) %></td>
         <td><%= property.address %></td>
-        <td><%= property.age %></td>
+        <td><%= property.age %>年</td>
         <td><%= property.remarks %></td>
         <td><%= link_to '詳細', property %></td>
         <td><%= link_to '編集', edit_property_path(property) %></td>
         <td><%= link_to '削除', property, method: :delete, data: { confirm: '削除しますか?' } %></td>
       </tr>
     <% end %>
-  </table>
+  </tbody>
 </table>
 
 <br>
