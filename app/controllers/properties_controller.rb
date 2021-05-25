@@ -58,7 +58,7 @@ class PropertiesController < ApplicationController
           :minutes_on_foot,
           :property_id,
           :id,
-          :_destroy,
+          :_destroy
         ],
       )
   end
