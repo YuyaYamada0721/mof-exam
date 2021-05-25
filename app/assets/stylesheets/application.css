@@ -17,3 +17,7 @@
 .property-container {
   border-bottom: solid 4px gray;
 }
+
+body {
+  background-color: #fffaf0;
+}
