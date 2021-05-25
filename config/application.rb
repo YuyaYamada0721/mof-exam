@@ -9,5 +9,6 @@ module DevExam
     config.generators do |g|
       g.assets false
       g.jbuilder false
+    end
   end
 end
