@@ -14,10 +14,14 @@
  *= require_self
  */
 
+body {
+  background-color: #fffaf0;
+}
+
 .property-container {
   border-bottom: solid 4px gray;
 }
 
-body {
-  background-color: #fffaf0;
+p {
+  margin: 40px;
 }
